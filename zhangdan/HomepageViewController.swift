@@ -9,11 +9,11 @@ import UIKit
 
 class HomepageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // UI相关的变量
-    var createItemButton:UIButton?
-    var tableView:UITableView?
+    var createItemButton:UIButton? // 新增订单按钮
+    var tableView:UITableView? // 显示所有订单的 tableview
 
     // 数据相关的变量
-    var data:[String:]
+    var data:[ItemData] // 每一项就是一个订单
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -15,7 +15,7 @@
 		DA3DB3BE2730199D00D47C45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3DB3BC2730199D00D47C45 /* LaunchScreen.storyboard */; };
 		DADF391E27301ED300D78CD2 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADF391D27301ED300D78CD2 /* SingleViewController.swift */; };
 		DADF39212730382E00D78CD2 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADF39202730382E00D78CD2 /* Tools.swift */; };
-		DADF392427303AF000D78CD2 /* HomepageItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADF392327303AF000D78CD2 /* HomepageItemData.swift */; };
+		DADF392427303AF000D78CD2 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADF392327303AF000D78CD2 /* ItemData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		DA3DB3BF2730199D00D47C45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DADF391D27301ED300D78CD2 /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
 		DADF39202730382E00D78CD2 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
-		DADF392327303AF000D78CD2 /* HomepageItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageItemData.swift; sourceTree = "<group>"; };
+		DADF392327303AF000D78CD2 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +66,8 @@
 				DA3DB3B32730199C00D47C45 /* SceneDelegate.swift */,
 				DA3DB3B52730199C00D47C45 /* HomepageViewController.swift */,
 				DADF391D27301ED300D78CD2 /* SingleViewController.swift */,
+				DADF392327303AF000D78CD2 /* ItemData.swift */,
 				DADF39202730382E00D78CD2 /* Tools.swift */,
-				DADF392327303AF000D78CD2 /* HomepageItemData.swift */,
 				DA3DB3B72730199C00D47C45 /* Main.storyboard */,
 				DA3DB3BA2730199D00D47C45 /* Assets.xcassets */,
 				DA3DB3BC2730199D00D47C45 /* LaunchScreen.storyboard */,
@@ -148,7 +148,7 @@
 			files = (
 				DA3DB3B62730199C00D47C45 /* HomepageViewController.swift in Sources */,
 				DA3DB3B22730199C00D47C45 /* AppDelegate.swift in Sources */,
-				DADF392427303AF000D78CD2 /* HomepageItemData.swift in Sources */,
+				DADF392427303AF000D78CD2 /* ItemData.swift in Sources */,
 				DADF391E27301ED300D78CD2 /* SingleViewController.swift in Sources */,
 				DA3DB3B42730199C00D47C45 /* SceneDelegate.swift in Sources */,
 				DADF39212730382E00D78CD2 /* Tools.swift in Sources */,
