@@ -9,6 +9,7 @@ import UIKit
 
 class ItemData: NSObject {
     
+    
     // 订单日期相关
     var createDate:Date // 创建订单的日期
     var sendDate:Date // 发货日期
