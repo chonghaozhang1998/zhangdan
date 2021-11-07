@@ -14,6 +14,7 @@ class DateSelectViewController:UIViewController {
     var dataPicker:UIDatePicker!
     var buttons:[UIButton] = []
     var buttonContainer:UIStackView!
+    var confirmButtonClickedTag = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,11 +71,24 @@ class DateSelectViewController:UIViewController {
             button.layer.borderColor = UIColor.black.cgColor
             button.setTitleColor(.black, for: .normal)
         }
-        
-        buttons[0].setTitle("确定", for: .normal)
-        buttons[1].setTitle("取消", for: .normal)
         for item in self.buttons {
             self.buttonContainer.addArrangedSubview(item)
         }
+        
+        buttons[0].setTitle("确定", for: .normal)
+        buttons[0].addTarget(self, action: #selector(confirmButtonClicked), for: .touchUpInside)
+        buttons[1].setTitle("取消", for: .normal)
+        buttons[1].addTarget(self, action: #selector(cancelButtonClicked), for: .touchUpInside)
+    }
+    
+    @objc func confirmButtonClicked() {
+        self.dismiss(animated: false, completion: nil)
+        let singelViewController = SingleViewController()
+        let navVC = UIApplication.shared.keyWindow?.rootViewController as! UINavigationController
+        navVC.viewControllers[0].navigationController?.pushViewController(singelViewController, animated: true)
+    }
+    
+    @objc func cancelButtonClicked() {
+        self.dismiss(animated: true, completion: nil)
     }
 }

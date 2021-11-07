@@ -24,6 +24,7 @@ class HomepageViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     func setupUI() {
+        self.view.backgroundColor = .white
         // 设置 tableview
         tableView = UITableView()
         tableView?.dataSource = self
@@ -56,6 +57,7 @@ class HomepageViewController: UIViewController, UITableViewDelegate, UITableView
         modalViewController.definesPresentationContext = true
         modalViewController.modalPresentationStyle = .custom
         self.present(modalViewController, animated: true, completion: nil)
+//        self.present(modalViewController, animated: true, completion: nil)
     }
     
     
