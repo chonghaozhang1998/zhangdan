@@ -13,12 +13,17 @@
 		DA3DB3B92730199C00D47C45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3DB3B72730199C00D47C45 /* Main.storyboard */; };
 		DA3DB3BB2730199D00D47C45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3DB3BA2730199D00D47C45 /* Assets.xcassets */; };
 		DA3DB3BE2730199D00D47C45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3DB3BC2730199D00D47C45 /* LaunchScreen.storyboard */; };
+		DA84FE0A27316F4400E04783 /* DateSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84FE0927316F4400E04783 /* DateSelectViewController.swift */; };
 		DADF391E27301ED300D78CD2 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADF391D27301ED300D78CD2 /* SingleViewController.swift */; };
 		DADF39212730382E00D78CD2 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADF39202730382E00D78CD2 /* Tools.swift */; };
 		DADF392427303AF000D78CD2 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADF392327303AF000D78CD2 /* ItemData.swift */; };
+		DFB1A9C67F7B08C5E62F910E /* Pods_zhangdan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317A4271D9EC38B58D7084C1 /* Pods_zhangdan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1840421AD193334389F36386 /* Pods-zhangdan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhangdan.release.xcconfig"; path = "Target Support Files/Pods-zhangdan/Pods-zhangdan.release.xcconfig"; sourceTree = "<group>"; };
+		317A4271D9EC38B58D7084C1 /* Pods_zhangdan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zhangdan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		897CEE50426C41FEE1EBE4C7 /* Pods-zhangdan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhangdan.debug.xcconfig"; path = "Target Support Files/Pods-zhangdan/Pods-zhangdan.debug.xcconfig"; sourceTree = "<group>"; };
 		DA3DB3AE2730199C00D47C45 /* zhangdan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhangdan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3DB3B12730199C00D47C45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA3DB3B32730199C00D47C45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +32,7 @@
 		DA3DB3BA2730199D00D47C45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA3DB3BD2730199D00D47C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA3DB3BF2730199D00D47C45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA84FE0927316F4400E04783 /* DateSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectViewController.swift; sourceTree = "<group>"; };
 		DADF391D27301ED300D78CD2 /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
 		DADF39202730382E00D78CD2 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		DADF392327303AF000D78CD2 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
@@ -37,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB1A9C67F7B08C5E62F910E /* Pods_zhangdan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7639CB8D533A072601B95B7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				897CEE50426C41FEE1EBE4C7 /* Pods-zhangdan.debug.xcconfig */,
+				1840421AD193334389F36386 /* Pods-zhangdan.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC2274912A0F31C3E497BB94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				317A4271D9EC38B58D7084C1 /* Pods_zhangdan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA3DB3A52730199C00D47C45 = {
 			isa = PBXGroup;
 			children = (
 				DA3DB3B02730199C00D47C45 /* zhangdan */,
 				DA3DB3AF2730199C00D47C45 /* Products */,
+				7639CB8D533A072601B95B7F /* Pods */,
+				AC2274912A0F31C3E497BB94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +93,7 @@
 				DA3DB3B32730199C00D47C45 /* SceneDelegate.swift */,
 				DA3DB3B52730199C00D47C45 /* HomepageViewController.swift */,
 				DADF391D27301ED300D78CD2 /* SingleViewController.swift */,
+				DA84FE0927316F4400E04783 /* DateSelectViewController.swift */,
 				DADF392327303AF000D78CD2 /* ItemData.swift */,
 				DADF39202730382E00D78CD2 /* Tools.swift */,
 				DA3DB3B72730199C00D47C45 /* Main.storyboard */,
@@ -83,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA3DB3C22730199D00D47C45 /* Build configuration list for PBXNativeTarget "zhangdan" */;
 			buildPhases = (
+				657BDA677E5E29CDBBE855B1 /* [CP] Check Pods Manifest.lock */,
 				DA3DB3AA2730199C00D47C45 /* Sources */,
 				DA3DB3AB2730199C00D47C45 /* Frameworks */,
 				DA3DB3AC2730199C00D47C45 /* Resources */,
+				81A005FC8D279CB6EC0BF84C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +171,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		657BDA677E5E29CDBBE855B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zhangdan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81A005FC8D279CB6EC0BF84C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zhangdan/Pods-zhangdan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zhangdan/Pods-zhangdan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zhangdan/Pods-zhangdan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA3DB3AA2730199C00D47C45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -149,6 +221,7 @@
 				DA3DB3B62730199C00D47C45 /* HomepageViewController.swift in Sources */,
 				DA3DB3B22730199C00D47C45 /* AppDelegate.swift in Sources */,
 				DADF392427303AF000D78CD2 /* ItemData.swift in Sources */,
+				DA84FE0A27316F4400E04783 /* DateSelectViewController.swift in Sources */,
 				DADF391E27301ED300D78CD2 /* SingleViewController.swift in Sources */,
 				DA3DB3B42730199C00D47C45 /* SceneDelegate.swift in Sources */,
 				DADF39212730382E00D78CD2 /* Tools.swift in Sources */,
@@ -295,6 +368,7 @@
 		};
 		DA3DB3C32730199D00D47C45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 897CEE50426C41FEE1EBE4C7 /* Pods-zhangdan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +389,7 @@
 		};
 		DA3DB3C42730199D00D47C45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1840421AD193334389F36386 /* Pods-zhangdan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

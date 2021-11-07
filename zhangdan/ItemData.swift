@@ -12,21 +12,21 @@ class ItemData: NSObject {
     
     // 订单日期相关
     var createDate:Date // 创建订单的日期
-    var sendDate:Date // 发货日期
-    var receivingMoneyDate:Date // 收款日期
-    var address:String // 订单地址
+    var sendDate:Date? // 发货日期
+    var receivingMoneyDate:Date? // 收款日期
+    var address:String? // 订单地址
     
     // 订单收货人相关
-    var name:String // 收货人姓名
-    var phoneNumber: UInt // 收货人电话号码
+    var name:String?// 收货人姓名
+    var phoneNumber: UInt? // 收货人电话号码
     
     // 订单货物相关
-    var shuiguan:[Shuiguan] // 水罐
-    var peijian:[Peijian] // 配件
+    var shuiguan:[Shuiguan] = []// 水罐
+    var peijian:[Peijian] = []// 配件
     
     override init() {
-        super.init()
         self.createDate = Date()
+        super.init()
     }
     
     // 当前订单新增水罐
